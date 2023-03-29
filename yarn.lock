@@ -399,6 +399,11 @@ is-number@^7.0.0:
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
 
+jquery-gmap@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/jquery-gmap/-/jquery-gmap-2.1.1.tgz#454fcec08a1a74ddfa6f70e3c5578b96cb57e94f"
+  integrity sha512-rYCYFQeTxLLBMAucpguZcaou4wj6Fnqoo+kEedVUqbxTIgYvMnFZiif/ApX4TWGqMDSdYVpTEXBEq3KRIEQJrg==
+
 media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"

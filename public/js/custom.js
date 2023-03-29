@@ -1,3 +1,5 @@
+const link = document.getElementById('link');
+
 function sendMessageContact()
 {
 	const formContactUs = document.getElementById('contactForm');

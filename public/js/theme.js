@@ -2130,7 +2130,7 @@ window.theme = {};
 
 				self.$wrapper.find('li.dropdown > a:not(.disabled), li.dropdown-submenu > a:not(.disabled)').on('click', function(e) {
 
-					e.preventDefault();
+					//e.preventDefault();
 
 					if ($(window).width() > 991) {
 						return this;
