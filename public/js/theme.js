@@ -113,6 +113,7 @@ window.theme = {};
 
 }).apply(this, [window.theme, jQuery]);
 
+
 // Carousel
 (function(theme, $) {
 

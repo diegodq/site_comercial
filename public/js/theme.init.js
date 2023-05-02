@@ -1,4 +1,4 @@
-// Commom Plugins
+  // Commom Plugins
 (function($) {
 
 	'use strict';
@@ -16,7 +16,7 @@
 	// Tooltips
 	if ($.isFunction($.fn['tooltip'])) {
 		$('[data-tooltip]').tooltip();
-	}
+	} 
 
 }).apply(this, [jQuery]);
 

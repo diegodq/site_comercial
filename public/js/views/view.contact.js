@@ -35,7 +35,7 @@ Version: 		3.7.0
 				complete: function(data) {
 					console.log(data);
 					if (typeof data.responseJSON === 'object') {
-						if (data.responseJSON.status == true) {
+						if (data.responseJSON.status == 'success') {
 							$messageSuccess.removeClass('hidden');
 							$messageError.addClass('hidden');
 
