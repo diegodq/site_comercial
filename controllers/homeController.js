@@ -1,4 +1,8 @@
 const nodemailer = require('nodemailer');
+const hbs = require('nodemailer-express-handlebars');
+const relativePathTemplate = "../views/mail-template/index.handlebars";
+const path = require('path');
+const fs = require('fs');
 
 module.exports = {
 	async home(request, response)
@@ -20,11 +24,26 @@ module.exports = {
       tls: { rejectUnauthorized: false }
     });
 
+    const handlebarOptions = {
+      viewEngine: {
+        partialsDir: path.resolve(__dirname,'../views/'),
+        defaultLayout: false
+      },
+      viewPath: path.resolve(__dirname, '../views/mail-template/')
+    }
+
+    transporter.use('compile', hbs(handlebarOptions));
+
     let configuration = {
       from: 'noreply@automatizavarejo.com.br',
       to: 'contato@automatizavarejo.com.br',
       subject: subject,
-      text: `Nome do contato: ${name}\n email do contato: ${email} \n Mensagem: ${message}`
+      template: 'mail',
+      context: {
+        name: name,
+        email: email,
+        message: message
+      }
     }
 
     transporter.sendMail(configuration, (error, result) => {
